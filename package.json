@@ -5,5 +5,12 @@
   "main": "index.js",
   "repository": "https://github.com/jasonbowden1000/classic-problems-node.git",
   "author": "Jason Bowden <jason.bowden1000@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.1.0",
+    "mocha": "^3.4.2"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test/spec/* spec"
+  }
 }
