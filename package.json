@@ -1,0 +1,9 @@
+{
+  "name": "classic-problems-node",
+  "version": "0.0.1",
+  "description": "Data Structures: review and practice",
+  "main": "index.js",
+  "repository": "https://github.com/jasonbowden1000/classic-problems-node.git",
+  "author": "Jason Bowden <jason.bowden1000@gmail.com>",
+  "license": "MIT"
+}
