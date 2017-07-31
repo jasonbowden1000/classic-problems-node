@@ -1,5 +1,5 @@
 const expect = require('chai').expect;
-const bitManipulator = require('./../../problems/bit-manipulation');
+const bitManipulator = require('./../../../problems/bit-manipulation');
 
 describe('bitManipulator', () => {
   describe('swaps digits', () => {
