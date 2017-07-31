@@ -11,6 +11,6 @@
     "mocha": "^3.4.2"
   },
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha --recursive test/spec/* spec"
+    "test": "./node_modules/mocha/bin/mocha test/spec/*"
   }
 }
