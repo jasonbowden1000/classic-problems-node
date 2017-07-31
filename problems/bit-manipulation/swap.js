@@ -5,7 +5,9 @@
  * - getting a specific bit
  *     Place significant bit in rightmost position by popping off the number of places
  *     Use a simple mask to determine the rightmost bit
- * - using XOR to invert masked bit
+ * - Check to see if the bits are distinct, to avoid stray XORing
+ * - Use bitwise OR, that is, |, to combine masks
+ * - Use XOR to invert masked bits
  */
 
 function swap(num, i, j) {
