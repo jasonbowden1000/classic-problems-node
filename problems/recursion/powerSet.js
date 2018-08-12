@@ -54,7 +54,7 @@ function getSubsets(a) {
   return allSubsets;
 }
 
-// Challenge:
+// Variant:
 // - power set with duplicates
 
 function clone(arr) {

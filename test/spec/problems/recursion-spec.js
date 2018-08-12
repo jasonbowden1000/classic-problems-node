@@ -14,7 +14,7 @@ let powerSetContext = (powerSet) => {
     it('should not modify the original array', () => {
       let sampleSet = ["moe", "larry", "curly"];
       recursion.powerSet(sampleSet);
-      expect(sampleSet).to.have.lengthOf(3);
+      expect(sampleSet).to.deep.eql(["moe", "larry", "curly"]);
     });
   });
 };
