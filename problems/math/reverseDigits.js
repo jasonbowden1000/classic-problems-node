@@ -1,14 +1,12 @@
-function reverseDigits(num) {
-  let isNegative = num < 0;
-  let result = 0;
-  let remaining = Math.abs(num);
+function reverseDigits(n) {
+  let r = 0;
 
-  while (remaining) {
-    result = result * 10 + remaining % 10;
-    remaining = Math.floor(remaining / 10);
+  while (n) {
+    r = r * 10 + n % 10;
+    n = Math.trunc(n / 10);
   }
 
-  return isNegative ? -result : result;
+  return r;
 }
 
 module.exports = { reverseDigits };
