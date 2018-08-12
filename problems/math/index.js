@@ -1,3 +1,3 @@
-let { reverseDigits, bruteForceReverseDigits } = require('./reverseDigits');
+let { reverseDigits } = require('./reverseDigits');
 
-module.exports = { reverseDigits, bruteForceReverseDigits };
+module.exports = { reverseDigits };
