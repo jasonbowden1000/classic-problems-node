@@ -33,6 +33,6 @@ let binarySearchContext = (binarySearch) => {
 };
 
 describe('Searching', () => {
-  binarySearchContext(search.binary);
-  binarySearchContext(search.binaryGolfed);
+  binarySearchContext(search.binarySearch);
+  binarySearchContext(search.binarySearchGolfed);
 });

@@ -7,7 +7,7 @@
  * - let the iteration self-terminate --  O(log n) complexity -- when lower gets the upper hand
  * - if the search overshoots, it will reduce the interval against the direction of the miss
  */
-function binary(arr, value) {
+function binarySearch(arr, value) {
   let result = -1;
   let upper = arr.length - 1;
   let lower = 0;
@@ -28,8 +28,8 @@ function binary(arr, value) {
   return result;
 }
 
-function binaryGolfed(arr, value) {
+function binarySearchGolfed(arr, value) {
   return arr.indexOf(value);
 }
 
-module.exports = { binary, binaryGolfed };
+module.exports = { binarySearch, binarySearchGolfed };
