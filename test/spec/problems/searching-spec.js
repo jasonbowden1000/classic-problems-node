@@ -32,5 +32,7 @@ let binarySearchContext = (binarySearch) => {
   });
 };
 
-binarySearchContext(search.binary);
-binarySearchContext(search.binaryGolfed);
+describe('Searching', () => {
+  binarySearchContext(search.binary);
+  binarySearchContext(search.binaryGolfed);
+});
