@@ -1,9 +1,6 @@
 const expect = require('chai').expect;
 const search = require('./../../../problems/searching');
 
-console.log('what is search?');
-console.log(search);
-
 let binarySearchContext = (binarySearch) => {
   describe(`${binarySearch.name} search`, () => {
     var sortedArray;
