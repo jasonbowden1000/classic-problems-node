@@ -28,8 +28,4 @@ function binarySearch(arr, value) {
   return result;
 }
 
-function binarySearchGolfed(arr, value) {
-  return arr.indexOf(value);
-}
-
-module.exports = { binarySearch, binarySearchGolfed };
+module.exports = binarySearch;
