@@ -13,7 +13,7 @@ function binarySearch(arr, value) {
   let lower = 0;
 
   while (upper >= lower) {
-    let middle = lower + Math.floor((upper - lower) / 2);
+    let middle = Math.floor((upper + lower) / 2);
 
     if (arr[middle] > value) {
       upper = middle - 1;
