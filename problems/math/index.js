@@ -1,3 +1,4 @@
-let { reverseDigits } = require('./reverseDigits');
+let reverseDigits = require('./reverseDigits');
+let { binarySearch, binarySearchGolfed } = require('./binarySearch');
 
-module.exports = { reverseDigits };
+module.exports = { binarySearch, binarySearchGolfed, reverseDigits };

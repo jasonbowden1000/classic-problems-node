@@ -9,4 +9,4 @@ function reverseDigits(n) {
   return r;
 }
 
-module.exports = { reverseDigits };
+module.exports = reverseDigits;
