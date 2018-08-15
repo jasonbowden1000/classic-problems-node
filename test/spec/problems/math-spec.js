@@ -1,5 +1,5 @@
 const expect = require('chai').expect;
-const math = require('./../../../problems/math');
+const math = require('./../../../src/problems/math');
 
 describe('Reverse digits', () => {
   it('should return a number in reverse order', () => {

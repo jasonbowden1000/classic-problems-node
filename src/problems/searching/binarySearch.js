@@ -1,12 +1,3 @@
-/*
- * Binary Search
- *
- * Insights:
- * - use middle to control how to navigate through the array
- * - when we find a match, we store the value and walk a step backwards (possible duplicates, looking for 1st)
- * - let the iteration self-terminate --  O(log n) complexity -- when lower gets the upper hand
- * - if the search overshoots, it will reduce the interval against the direction of the miss
- */
 function binarySearch(arr, value) {
   let result = -1;
   let upper = arr.length - 1;

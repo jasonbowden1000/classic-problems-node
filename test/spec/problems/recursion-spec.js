@@ -1,5 +1,5 @@
 const expect = require('chai').expect;
-const recursion = require('./../../../problems/recursion');
+const recursion = require('./../../../src/problems/recursion');
 
 let powerSetContext = (powerSet) => {
   describe(powerSet.name, () => {

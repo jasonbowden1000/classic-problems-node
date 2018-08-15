@@ -1,5 +1,5 @@
 const expect = require('chai').expect;
-const binarySearch = require('./../../../problems/searching');
+const binarySearch = require('./../../../src/problems/searching');
 
 describe('Binary Search', () => {
   var sortedArray;
