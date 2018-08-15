@@ -17,5 +17,6 @@ describe('isPalindrome', () => {
   it('should reject strings that are not palindromic', () => {
     expect(string.isPalindrome('jason')).to.be.false;
     expect(string.isPalindrome('dude')).to.be.false;
+    expect(string.isPalindrome('axyza')).to.be.false;
   });
 });
