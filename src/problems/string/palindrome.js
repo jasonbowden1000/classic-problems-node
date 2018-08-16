@@ -1,20 +1,20 @@
 const { isAlpha } = require('./../util.js');
 
-function isPalindrome(word) {
+function isPalindrome(str) {
   let i = 0;
-  let j = word.length - 1;
+  let j = str.length - 1;
   let result = true;
 
   while (i < j) {
-    while (!isAlpha(word.charAt(i)) && i < j) {
+    while (!isAlpha(str.charAt(i)) && i < j) {
       ++i;
     }
 
-    while (!isAlpha(word.charAt(j)) && i < j) {
+    while (!isAlpha(str.charAt(j)) && i < j) {
       --j;
     }
 
-    if (word.charAt(i).toLowerCase() !== word.charAt(j).toLowerCase()) {
+    if (str.charAt(i).toLowerCase() !== str.charAt(j).toLowerCase()) {
       result = false;
     }
 
