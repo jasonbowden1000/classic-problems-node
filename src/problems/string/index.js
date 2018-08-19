@@ -1,4 +1,4 @@
 let isPalindrome = require('./palindrome');
-let { isRoman, romanToNumeric } = require('./roman-to-numeric');
+let { isRoman, numericToRoman, romanToNumeric } = require('./roman-to-numeric');
 
-module.exports = { isPalindrome, isRoman, romanToNumeric };
+module.exports = { isPalindrome, isRoman, numericToRoman, romanToNumeric };

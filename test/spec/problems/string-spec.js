@@ -35,7 +35,7 @@ describe('String processing', () => {
     it('should not accept more than three consecutive numerals', () => {
       expect(string.isRoman('XXXX')).to.be.false;
     });
-    it('should reject any repetition of V, L, or D', () => {
+    it('should reject any sequential repetition of V, L, or D', () => {
       expect(string.isRoman('LL')).to.be.false;
       expect(string.isRoman('DDC')).to.be.false;
       expect(string.isRoman('XVV')).to.be.false;
@@ -63,11 +63,20 @@ describe('String processing', () => {
       expect(string.isRoman('XXC')).to.be.false;
       expect(string.isRoman('CCCXCCC')).to.be.false;
       expect(string.isRoman('LXL')).to.be.false;
+      expect(string.isRoman('IXI')).to.be.false;
+      expect(string.isRoman('IXXXI')).to.be.false;
     });
     it('should accept valid roman numerals', () => {
       expect(string.isRoman('XXX')).to.be.true;
       expect(string.isRoman('XIV')).to.be.true;
       expect(string.isRoman('CXC')).to.be.true;
+      expect(string.isRoman('XIX')).to.be.true;
+    });
+  });
+  describe('numericToRoman', () => {
+    it('should return the roman representation of a decimal number', () => {
+      expect(string.numericToRoman(1666)).to.equal('MDCLXVI');
+      expect(string.numericToRoman(91)).to.equal('XCI');
     });
   });
 });
