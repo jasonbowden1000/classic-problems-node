@@ -4,12 +4,8 @@ const bitManipulator = require('./../../../src/problems/bit-manipulation');
 describe('bitManipulator', () => {
   describe('swaps digits', () => {
     it('when given a number and two bit locations', () => {
-      let num = 6;
-      let positionOfBitA = 0;
-      let positionOfBitB = 1;
-
-      expect(bitManipulator.swap(num, positionOfBitA, positionOfBitB)).to.equal(5);
-      expect(bitManipulator.swap(num, positionOfBitA, positionOfBitA)).to.equal(num);
+      expect(bitManipulator.swap(6, 0, 1)).to.equal(5);
+      expect(bitManipulator.swap(6, 2, 3)).to.equal(10);
     });
   });
 });
