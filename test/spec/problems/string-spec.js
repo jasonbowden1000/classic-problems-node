@@ -23,12 +23,12 @@ describe('String processing', () => {
   });
   describe('romanToNumeric', () => {
     it('should return its decimal representation', () => {
-      expect(string.romanToNumeric('MDCCCLXVI')).to.equal(1866);
-      expect(string.romanToNumeric('XIV')).to.equal(14);
-      expect(string.romanToNumeric('LXXXIX')).to.equal(89);
-      expect(string.romanToNumeric('XCI')).to.equal(91);
-      expect(string.romanToNumeric('DCCCXC')).to.equal(890);
-      expect(string.romanToNumeric('MCMLXXXIX')).to.equal(1989);
+      expect(string.romanToArabic('MDCCCLXVI')).to.equal(1866);
+      expect(string.romanToArabic('XIV')).to.equal(14);
+      expect(string.romanToArabic('LXXXIX')).to.equal(89);
+      expect(string.romanToArabic('XCI')).to.equal(91);
+      expect(string.romanToArabic('DCCCXC')).to.equal(890);
+      expect(string.romanToArabic('MCMLXXXIX')).to.equal(1989);
     });
   });
   describe('isRoman', () => {
@@ -75,8 +75,8 @@ describe('String processing', () => {
   });
   describe('numericToRoman', () => {
     it('should return the roman representation of a decimal number', () => {
-      expect(string.numericToRoman(1666)).to.equal('MDCLXVI');
-      expect(string.numericToRoman(91)).to.equal('XCI');
+      expect(string.arabicToRoman(1666)).to.equal('MDCLXVI');
+      expect(string.arabicToRoman(91)).to.equal('XCI');
     });
   });
 });

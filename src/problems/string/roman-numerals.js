@@ -7,7 +7,7 @@ function isRoman(romanNum) {
   return /^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$/.test(romanNum);
 }
 
-function numericToRoman(num) {
+function arabicToRoman(num) {
   let romanNum = '';
   let divisorMap = Array.from(numberMap).map(([k, v]) => {
     return { arabic: v, roman: k }
@@ -23,7 +23,7 @@ function numericToRoman(num) {
   return romanNum;
 }
 
-function romanToNumeric(romanNum) {
+function romanToArabic(romanNum) {
   return [...romanNum]
     .map(l => numberMap.get(l))
     .reduceRight((acc, curr, i, arr) => {
@@ -31,4 +31,4 @@ function romanToNumeric(romanNum) {
     });
 }
 
-module.exports = { isRoman, numericToRoman, romanToNumeric };
+module.exports = { isRoman, arabicToRoman, romanToArabic };
