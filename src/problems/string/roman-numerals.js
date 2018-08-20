@@ -3,10 +3,6 @@ const romanMap = new Map([
   ["XC", 90], ["C", 100], ["CD", 400], ["D", 500], ["CM", 900], ["M", 1000]
 ]);
 
-function isRoman(n) {
-  return /^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$/.test(n);
-}
-
 function arabicToRoman(num) {
   let roman = '';
   let pairs = Array
@@ -22,6 +18,10 @@ function arabicToRoman(num) {
   }
 
   return roman;
+}
+
+function isRoman(n) {
+  return /^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$/.test(n);
 }
 
 function romanToArabic(romanNum) {
