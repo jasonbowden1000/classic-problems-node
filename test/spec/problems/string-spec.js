@@ -21,8 +21,8 @@ describe('String processing', () => {
       expect(string.isPalindrome('axyza')).to.be.false;
     });
   });
-  describe('romanToNumeric', () => {
-    it('should return its decimal representation', () => {
+  describe('romanToArabic', () => {
+    it('should return its arabic representation', () => {
       expect(string.romanToArabic('MDCCCLXVI')).to.equal(1866);
       expect(string.romanToArabic('XIV')).to.equal(14);
       expect(string.romanToArabic('LXXXIX')).to.equal(89);
@@ -73,7 +73,7 @@ describe('String processing', () => {
       expect(string.isRoman('XIX')).to.be.true;
     });
   });
-  describe('numericToRoman', () => {
+  describe('arabicToRoman', () => {
     it('should return the roman representation of a decimal number', () => {
       expect(string.arabicToRoman(1666)).to.equal('MDCLXVI');
       expect(string.arabicToRoman(91)).to.equal('XCI');
