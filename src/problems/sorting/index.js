@@ -1,3 +1,3 @@
-let merge = require('./merge');
+let mergeSorted = require('./mergeSorted');
 
-module.exports = { merge };
+module.exports = { mergeSorted };
