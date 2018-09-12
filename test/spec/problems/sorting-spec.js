@@ -8,6 +8,7 @@ describe('Sorter', () => {
       let arr2 = [3, 7, 11, 19];
       let merged = [3, 5, 7, 11, 13, 17, 19];
       expect(sorter.mergeSorted(arr1, arr2)).to.eql(merged);
+      expect(sorter.mergeSorted(arr2, arr1)).to.eql(merged);
       expect(sorter.mergeSorted(arr1, arr2)).to.not.eql([1, 2, 3, 4, 5, 6, 7]);
     });
 
@@ -16,6 +17,7 @@ describe('Sorter', () => {
       let arr2 = [3, 6, 7, 11, 19, 19];
       let merged = [3, 5, 5, 6, 6, 7, 11, 13, 13, 13, 17, 19, 19];
       expect(sorter.mergeSorted(arr1, arr2)).to.eql(merged);
+      expect(sorter.mergeSorted(arr2, arr1)).to.eql(merged);
       expect(sorter.mergeSorted(arr1, arr2)).to.not.eql([3, 5, 6, 7, 11, 13, 17, 19]);
     });
   });
