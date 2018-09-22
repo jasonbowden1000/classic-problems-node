@@ -1,3 +1,3 @@
 let binarySearch = require('./binarySearch');
 
-module.exports = binarySearch;
+module.exports = { binarySearch };
