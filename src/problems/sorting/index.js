@@ -1,4 +1,4 @@
 let mergeSorted = require('./mergeSorted');
-let findIntersectionOfSorted = require('./findIntersectionOfSorted');
+let intersectSorted = require('./intersectSorted');
 
-module.exports = { findIntersectionOfSorted, mergeSorted };
+module.exports = { intersectSorted, mergeSorted };

@@ -4,10 +4,10 @@ const sorter = require('./../../../src/problems/sorting');
 describe('Sorter', () => {
   describe('when computing the intersection of two sorted arrays', () => {
     it('should return a sorted array free of duplicates', () => {
-      let arr1 = [2, 3, 3, 5, 5, 6, 7, 7, 8, 12];
-      let arr2 = [5, 6, 6, 8, 8, 9, 10, 10];
-      let intersection = [5, 6, 8];
-      expect(sorter.findIntersectionOfSorted(arr1, arr2)).to.eql(intersection);
+      let arr1 = [2, 2, 3, 3, 5, 5, 6, 7, 7, 8, 12];
+      let arr2 = [2, 2, 2, 2, 5, 6, 6, 8, 8, 9, 10, 10];
+      let intersection = [2, 5, 6, 8];
+      expect(sorter.intersectSorted(arr1, arr2)).to.eql(intersection);
     });
   });
   describe('when merging two sorted arrays', () => {
