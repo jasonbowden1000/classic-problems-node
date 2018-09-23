@@ -1,2 +1,3 @@
 let pascalTriangle = require('./pascalTriangle');
-module.exports = { pascalTriangle };
+let pascalRow = require('./pascalRow');
+module.exports = { pascalRow, pascalTriangle };
